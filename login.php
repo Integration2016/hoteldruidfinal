@@ -1,5 +1,5 @@
 <?php
-    $connectie = mysqli_connect("blacksquare.no-ip.org", "login", "Student1", "login");
+    $connectie = mysqli_connect("localhost", "login", "Student1", "login");
     
     if(mysqli_connect_errno()) {
         echo "Kan geen verbinding maken: " . mysqli_connect_error();
@@ -18,7 +18,7 @@
     
     if($aantalRijen == 1) {
         setcookie("ingelogd","true");
-        header("location:blacksquare.no-ip.org/IP/hoteldruid/inizio.php");
+        header("inizio.php");
     }
     else {
         $bericht = "username of password is verkeerd.";
