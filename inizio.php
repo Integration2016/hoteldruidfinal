@@ -20,8 +20,15 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ##################################################################################
 
+if(!isset($_COOKIE['ingelogd'])) {
+        header("location:login.html");
+    }
+?>
 
-
+<form action="logout.php">
+    <input type="submit" value="uitloggen">
+</form>
+<?php
 $pag = "inizio.php";
 $titolo = "HotelDruid";
 
