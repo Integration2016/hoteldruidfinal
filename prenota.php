@@ -2359,6 +2359,21 @@ echo "</select>";
 echo ":<br>
  <textarea name=\"commento1_$n_t\" rows=3 cols=$cols_textarea style=\"white-space: pre; overflow: auto;\">".${"commento1_".$n_t}."</textarea><br>
 <div id=\"n_comm$n_t\">";
+if(isset($_POST['email'])) 
+    {
+    	$to=$_POST['email'];
+    	$from = "emeryishimwe@gmail.com";
+		$subject = 'Confirm new client';
+    	$message = 'Welkom.';
+		$headers  = "MIME-Version: 1.0" . "\r\n";
+		$headers .= "Content-type: text/html; charset=iso-8859-1\" . \"\r\n";
+		$headers .= "From: \". $from. \"\r\n";
+		$headers .= "Reply-To: ". $from. "\r\n";
+		$headers .= "X-Mailer: PHP/" . phpversion();
+		$headers .= "X-Priority: 1\" . \"\r\n"; 
+
+	    mail($to, $subject, $message, $headers);
+	}
 for ($num1 = 2 ; $num1 <= ${"num_commenti".$n_t} ; $num1++) {
 $nome_comm = "\"".${"tipo_commento$num1"."_".$n_t}."\"";
 if ($nome_comm == "\"checkin\"") $nome_comm = mex("per un promemoria all'entrata",$pag);
