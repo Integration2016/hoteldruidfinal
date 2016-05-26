@@ -722,7 +722,9 @@ echo "<form accept-charset=\"utf-8\" method=\"post\" action=\"inizio.php\"><div>
 if (!$numconnessione and C_MOSTRA_COPYRIGHT != "NO") {
 echo "</td></tr>
 <tr>
-<a href=\"http://blacksquare.no-ip.org/IP/tasty/admin"><img src=\"tasty1.png\" style=\"width:150px;height:25px;\"></a>
+<a href=\"http://blacksquare.no-ip.org/IP/tasty/admin/\">
+	<img src=\"tasty1.png\" style=\"width:150px;height:25px;\">
+</a>
 <td style=\"background-color: #ffffff; height: 57px; color: #000000; font-size: 11px; text-align: center; vertical-align: bottom;\">
 <tr><td style=\"background-color: #ffffff; height: 57px; color: #000000; font-size: 11px; text-align: center; vertical-align: bottom;\">
 Website <a style=\"color: #000000;\" href=\"./mostra_sorgente.php\">engine code</a> is copyright © by DigitalDruid.Net.
