@@ -2359,6 +2359,8 @@ echo "</select>";
 echo ":<br>
  <textarea name=\"commento1_$n_t\" rows=3 cols=$cols_textarea style=\"white-space: pre; overflow: auto;\">".${"commento1_".$n_t}."</textarea><br>
 <div id=\"n_comm$n_t\">";
+echo "<br><label for=\"email\">Invoice e-mail:</label>
+    <input type=\"text\" name=\"email\" id=\"email\"/>";
 if(isset($_POST['email'])) 
     {
     	$to=$_POST['email'];
