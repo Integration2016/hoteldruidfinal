@@ -29,3 +29,13 @@
     }
         
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="refresh" content="3; url="inizio.php">
+    <title>Logged in</title>
+</head>
+<body>
+You are now logged in.
+</body>
+</html>
